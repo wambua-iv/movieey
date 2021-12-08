@@ -1,8 +1,10 @@
+import { LinearProgress } from '@mui/material';
 import React from 'react';
 import { MovieObject } from '../../datatypes';
-import Buttons from '../ui/Buttons';
-import Hero from '../ui/Hero';
-import MoviesListDisplay from '../ui/MoviesListDisplay';
+import Buttons from '../layout/Buttons';
+import Hero from '../layout/Hero';
+import MoviesListDisplay from '../layout/MoviesListDisplay';
+import { Wrapper } from '../styles/Home.styles';
 
 interface Props {
     moviesObj: {
@@ -14,9 +16,9 @@ interface Props {
 const Home: React.FC<Props> = ({ moviesObj }) => {
     console.log(moviesObj.data?.results)
     return (
-        <div>
+        <Wrapper>
             {moviesObj.loading ? (
-                <div> </div>
+                <LinearProgress />
             ) : (
                 <div>
                     <Hero moviesList = {moviesObj.data}  />
@@ -24,7 +26,7 @@ const Home: React.FC<Props> = ({ moviesObj }) => {
                     <Buttons>load more..</Buttons>
                 </div>
             )}
-        </div>
+        </Wrapper>
     )
 }
 
