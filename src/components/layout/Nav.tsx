@@ -1,5 +1,6 @@
 import React from 'react';
-import { Wrapper } from '../styles/SideBar.styles';
+import { Wrapper } from '../styles/Nav.styles';
+import Buttons from './Buttons';
 
 const Nav: React.FC = () => {
     return (
@@ -7,8 +8,8 @@ const Nav: React.FC = () => {
             <div className='logo'>
                 <h2>Movie-ey</h2>
             </div>
-            <div>
-
+            <div className='auth'>
+                    <Buttons>Sign-in</Buttons>
             </div>
         </Wrapper>
     )

@@ -11,7 +11,8 @@ export interface MovieItem{
 	title: string;
 	video: boolean;
 	vote_average: number;
-	vote_count: number
+	vote_count: number;
+	release_date: Date
 }
 
 export interface MovieObject {

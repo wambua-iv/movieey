@@ -20,17 +20,7 @@ export const Wrapper = styled.div`
                 position: absolute;
                 margin: 5rem 0 0 5rem;
                 color: white;
-
-                h2{
-                    font-size: 2rem;
-                }
-
-                p{
-                    /* color: #104568f7; */
-                    font-size: 1.25rem;
-                }
             }
         }
 
 `;
-

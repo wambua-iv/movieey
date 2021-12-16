@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding:  0;
         margin: 0 auto;
-        background-color: #15202b;
+        background-color: #03031a;
 
         .hide-for-mobile{
             @media screen and (max-width : 769px){
@@ -22,6 +22,10 @@ export const GlobalStyles = createGlobalStyle`
         }
 
         .App{
+            display: flex;
+        }
+
+        .main-content{
             display: flex;
         }
     }

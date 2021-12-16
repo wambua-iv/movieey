@@ -18,10 +18,11 @@ export const useFetchData = (nameInStorage: string) => {
                 .then(res => res.json())
                 .then(data => {
                     localStorage.setItem("movies10", JSON.stringify(data))
-                    setData(() => ({ data: data, loading: true }))
+                    setData(() => ({ data: data, loading: false }))
                 })
                 .catch(e => console.log(e))
         })();
     }, [nameInStorage, setData])
+    console.log(data)
     return data;
 }
