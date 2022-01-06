@@ -1,14 +1,27 @@
 import styled from "styled-components";
+import breakPoints from "./breakPoints";
 
 export const Wrapper = styled.div`
     margin-top: 4rem;
     width: 70%;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
     grid-gap: 1rem;
     margin-top: 1.25rem;
     color: aliceblue;
+
+    @media only screen and ${breakPoints.device.sm}{
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    @media only screen and ${breakPoints.device.md}{
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    @media only screen and ${breakPoints.device.lg}{
+        grid-template-columns: repeat(3, 2fr);
+    }
   
+
 
     .movie{
         width: 350px;
@@ -25,7 +38,6 @@ export const Wrapper = styled.div`
             padding-left: .475rem ;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
         }
 
         a{
@@ -56,14 +68,13 @@ export const Wrapper = styled.div`
         }
 
         .rating{
-            font-size: .675rem;
-            display: 'flex';
-            padding-top: 1rem;
-            font-size: .625rem;
+            display: inline-block;
+            margin-left: .875rem;
+            font-size: .825rem;
 
             span{
                 background-color: aqua;
-                border-radius: 50%;
+                border-radius: 30%;
                 color: #000;
                 padding: .125rem;
             }
@@ -71,6 +82,16 @@ export const Wrapper = styled.div`
 
         .price{
             margin-left:4rem ;
+        }
+
+        .description{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: break-word;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            margin-top: 1rem;
         }
 
        

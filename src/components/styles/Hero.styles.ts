@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     .back-drop{
-        width: 92vw;
-        height: 40vh;
+        width: 100vw;
+        height: 50vh;
 
         img{
             height: 100%;
@@ -16,18 +16,18 @@ export const Wrapper = styled.div`
             position: absolute;
 
             .popular{
-                width: 40rem;
+                width: 55rem;
                 position: absolute;
-                margin: 5rem 0 0 5rem;
+                margin: 8rem 0 0 5rem;
                 color: white;
 
                 h2{
-                    font-size: 2rem;
+                    font-size: 2.5rem;
                 }
 
                 p{
                     /* color: #104568f7; */
-                    font-size: 1.25rem;
+                    font-size: 1.5rem;
                 }
             }
         }

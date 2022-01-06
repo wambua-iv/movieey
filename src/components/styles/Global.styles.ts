@@ -23,6 +23,7 @@ export const GlobalStyles = createGlobalStyle`
 
         .App{
             display: flex;
+            margin: 0 auto;
         }
 
         .main-content{

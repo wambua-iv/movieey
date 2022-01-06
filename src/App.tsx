@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
     
-    <SideBar />
+    {/* <SideBar /> */}
     <Router>
       <Routes>
         <Route path ='/' element ={<Home moviesObj={MoviesObj} />} />

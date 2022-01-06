@@ -19,7 +19,7 @@ const Hero: React.FC<Props> = ({moviesList}) => {
                     </div>
             </div>
             <div className='back-drop'>
-            <img src={BackDrop/*`https://image.tmdb.org/t/p/original/${moviesList?.results[0].backdrop_path}`*/}  alt = "back_drop" />
+            <img src={`https://image.tmdb.org/t/p/original/${moviesList?.results[0].backdrop_path}`}  alt = "back_drop" />
             </div>
         </Wrapper>
     )

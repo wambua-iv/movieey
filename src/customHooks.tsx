@@ -12,9 +12,9 @@ export const useFetchData = (nameInStorage: string) => {
     useEffect(() => {
         const localResult = getData(nameInStorage);
 
-        if (localResult) setData(() => ({ data: localResult, loading: false }));
+        //if (localResult) setData(() => ({ data: localResult, loading: false }));
         (() => {
-            fetch(' https://api.themoviedb.org/3/movie/popular?api_key=a12e5fc1aa480843d3db1a48a8e98a36')
+            fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY}`)
                 .then(res => res.json())
                 .then(data => {
                     localStorage.setItem("movies10", JSON.stringify(data))
